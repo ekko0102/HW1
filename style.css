@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*計算長寬不一樣border-box弄成盒子*/
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("123.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    width: 100%;/*調背景的圖片*/
+    height: 100vh;
+}   
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo
+{
+    padding-right: 50%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px rgb(95, 83, 83);
+    font-size: 120%;
+    font-weight: 50px;
+}
+.item ul
+{
+    list-style:none;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+.item ul li a
+{
+    text-decoration: none;/*拿掉底線*/
+    padding: 10px;
+    color:#808080;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;    
+}
+
+.video{
+    display:flex;
+    justify-content: space-around;
+
+}
+.test{
+    overflow:scroll;
+    padding-right: 100px;
+}
+@media(max-width: 1000px)
+{
+    .video{
+        flex-direction: column;
+
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    
+    
+
+
+}
